@@ -4,7 +4,7 @@
 
 @layer components {
     .sidelink {
-        @apply p-6 hover:bg-gray-100 hover:text-blue-500;
+        @apply px-12 py-4 hover:bg-gray-100 hover:text-blue-500 flex space-x-4 items-center w-full text-center;
     }
 }
 
