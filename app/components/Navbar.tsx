@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import {auth, signIn, signOut} from "@/auth";
 
-export default async function Navbar () {
+export default async function Navbar ({ className } : { className?: string }) {
     const session = await auth();
 
     return (
-        <nav className="flex items-center justify-between p-5">
+        <nav className={`flex items-center justify-between p-5 ${className}`}>
             <div className="flex items-center space-x-4">
                 <Link href="/" className="hover-blue-500 text-2xl">
                     ToDoLIST
